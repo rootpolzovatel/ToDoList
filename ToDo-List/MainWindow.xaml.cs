@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ToDo_List.ViewModels;
 
 namespace ToDo_List
 {
@@ -23,6 +24,8 @@ namespace ToDo_List
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new ToDoViewModel();
         }
     }
 }
